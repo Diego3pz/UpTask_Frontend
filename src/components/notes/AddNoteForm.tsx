@@ -6,6 +6,7 @@ import { createNote } from '@/api/NoteAPI'
 import { toast } from 'react-toastify'
 import { useLocation, useParams } from 'react-router-dom'
 
+
 export default function AddNoteForm() {
     const params = useParams()
     const location = useLocation()
