@@ -17,7 +17,7 @@ const DashboardView = () => {
         queryKey: ['projects'],
         queryFn: getProjects
     })
-    
+
 
     if (isLoading && authLoading) return 'Cargando...'
     if (data && user) return (
@@ -30,6 +30,7 @@ const DashboardView = () => {
                 >
                     Nuevo Proyecto
                 </Link>
+
             </nav>
 
             {data.length ? (
